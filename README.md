@@ -55,4 +55,10 @@ Docker introductory presentation
 ## Security
 - [ ] Security
     - [ ] Anchore
-- [ ] 
+- [ ]
+
+## Commands
+docker build -t mydocker .
+docker run --rm mydocker https://httpbin.org/get
+docker-compose run app -I https://httpbin.org/get 
+   
