@@ -2,34 +2,35 @@
 Docker introductory presentation
 
 ## Introduction
-- [ ] Why do you need docker?
-    - Let's consider you're working on a team with three other engineers. The goal is to create a web application. You decided on the frameworks, database, and orchestration tools to use. Each of you would like to contribute to the code base on all three items. 
-    Each piece of the project may rely on different OS', libraries, and services. It becomes a mess to manage, especially when: 
-        - New developers need to setup their environments to match the current project
-        - Creating development, testing, and production environments
-        - OS upgrades for each application installed
+###### Why Docker?
+Let's consider you're working on a team with three other engineers. The goal is to create a web application. You decided on the frameworks, database, and orchestration tools to use. Each of you would like to contribute to the code base on all three items. 
+
+Each piece of the project may rely on different OS', libraries, and services. It becomes a mess to manage, especially when: 
+- New developers need to setup their environments to match the current project
+- Creating development, testing, and production environments
+- OS upgrades for each application installed
         
  ![No Docker Solution](../master/images/DockerIntro-NoDocker.png?raw=true)
 
 ## VMs and Contaianers
 Containers will run guest applications on the same OS kernel as the host.
-    * Easy to update
-    * Minimal maintaince
-    * Size of images is smaller
-    * Speed of start-up is much faster
-    * Restarting takes it to it's inital state
+- Easy to update
+- Minimal maintaince
+- Size of images is smaller
+- Speed of start-up is much faster
+- Restarting takes it to it's inital state
 
 Containers vs. Image
-    * Containers run the instances of the images that you create
-    * Images are the package or template, similar to a VM, that's used to create one or several containers
+- Containers run the instances of the images that you create
+- Images are the package or template, similar to a VM, that's used to create one or several containers
 
  ![Docker Solution](../master/images/DockerIntro-Container.png?raw=true)
 
 
 Virtualization is a simulated computer, often with it's own BIOS/EFI and simulated (often configurable) hardware.
-    * Applications layer and own kernel (does not use host kernel) 
-    * Any OS can be run on any other OS
-    * GUI based VMs
+- Applications layer and own kernel (does not use host kernel) 
+- Any OS can be run on any other OS
+- GUI based VMs
 
  ![VM Docker Solution](../master/images/DockerIntro-VM.png?raw=true)
  
