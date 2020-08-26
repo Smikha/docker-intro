@@ -28,32 +28,59 @@ Docker introductory presentation
     -  Images are the package or template, similar to a VM, that's used to create one or several containers
 
 - [ ] Community vs. Enterprise Edition
+
 - [ ] Commands
-    - [ ] Docker ps -a
-    - [ ] Docker run <name>
-        - [ ] This is considered attached mode
+    - Show all containers (default shows just running)
+        - docker ps -a
+
+    - Run a command in a new container (attached mode)
+        - docker run <name> 
+
+    - Run container in background and print container ID (detached mode)
     - [ ] Docker run -d <name>
-        - [ ] This is considered in the detach mode (background)
         - [ ] You can attach back to the container later with
             - [ ] Docker attach <characters of container>
+
+
     - [ ] Docker run -it <name>
-        - [ ] I is the STDIN (interactive mode_ 
-        - [ ] T is for terminal
-    - [ ] Docker pull <name> (Only pull the image, don’t run the container)
+        - [ ] I Keep STDIN open even if not attached
+        - [ ] T Allocate a pseudo-TTY
+
+    - Pull an image or a repository from a registry
+    - [ ] Docker pull <name> 
+
+    - Stop one or more running containers
     - [ ] Docker stop <name>
+
+    - Remove one or more containers
     - [ ] Docker rm <name> 
-    - [ ] Docker images
+
+    - Remove one or more images
     - [ ] Docker rmi <name>
+
+    - Manage images
+    - [ ] Docker images
+
+    - Run a command in a running container
     - [ ] Docker exec <container name> cat /etc/hosts
+
+    - Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.
+        - Docker system prune -af
+        - Docker system prune --volume 
+
     - [ ] Networking
         - [ ] Docker run -p 80:5000 <Name> 
             - [ ] Mapping port 80 of localhost to 5000 of docker container
+
+
     - [ ] Volume
 ￼
   
 ## Troubleshooting
-- [ ] Troubleshoot
+    - Return low-level information on Docker objects
     - [ ] Docker inspect <name>
+
+    - Fetch the logs of a container
     - [ ] Docker logs <name> 
   
 ## Envirnoment Variables
@@ -63,10 +90,18 @@ Docker introductory presentation
 ## Security
 - [ ] Security
     - [ ] Anchore
-- [ ]
 
 ## Commands
 docker build -t mydocker .
 docker run --rm mydocker https://httpbin.org/get
 docker-compose run app -I https://httpbin.org/get 
+
+
+
+## Future Topics
+- Networking
+- Volume Mapping
+- Security
+- Orchestration
+
    
