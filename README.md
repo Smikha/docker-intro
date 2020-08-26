@@ -86,9 +86,9 @@ Remove all unused containers, networks, images (both dangling and unreferenced),
     docker system prune --volume 
 
 Networking
-    
+    Mapping port 80 of localhost to 5000 of docker container
+
     docker run -p 80:5000 <Name> 
-Mapping port 80 of localhost to 5000 of docker container
 
 
 Volume
