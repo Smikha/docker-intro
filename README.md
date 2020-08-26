@@ -1,6 +1,4 @@
 # docker-intro
-Docker introductory presentation
-
 ## Introduction
 ###### Why Docker?
 Let's consider you're working on a team with three other engineers. The goal is to create a web application. You decided on the frameworks, database, and orchestration tools to use. Each of you would like to contribute to the code base on all three items. 
@@ -8,7 +6,7 @@ Let's consider you're working on a team with three other engineers. The goal is 
 Each piece of the project may rely on different OS', libraries, and services. It becomes a mess to manage, especially when: 
 - New developers need to setup their environments to match the current project
 - Creating development, testing, and production environments
-- OS upgrades for each application installed
+- OS upgrades that may affect each application differently
         
  ![No Docker Solution](../master/images/DockerIntro-NoDocker.png?raw=true)
 
@@ -36,12 +34,8 @@ Virtualization is a simulated computer, often with it's own BIOS/EFI and simulat
  
  
 
-## Virtualization AND Docker containers 
+## Commands <sup>1</sup>
 ￼
-
-
-- [ ] Community vs. Enterprise Edition
-
 - [ ] Commands
     - Show all containers (default shows just running)
     docker ps -a
@@ -118,4 +112,6 @@ Fetch the logs of a container
 - Security
 - Orchestration
 
+
+<sup>1</sup> https://docs.docker.com/engine/reference/commandline/cli/
    
