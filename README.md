@@ -97,13 +97,16 @@ Volume
   
 ## Troubleshooting
 Return low-level information on Docker objects
+
     Docker inspect <name>
 
 Fetch the logs of a container
+
     Docker logs <name> 
   
 ## Envirnoment Variables
-- [ ] Environment variables
+Environment variables
+
     Docker run -e HELLO_NAME=Stevan <name>
   
 ## Security
