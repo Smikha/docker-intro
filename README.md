@@ -8,6 +8,8 @@ Docker introductory presentation
         - New developers need to setup their environments to match the current project
         - Creating development, testing, and production environments
         - OS upgrades for each application installed
+        
+ ![alt text](https://github.com/[smikha]/[docker-intro]/images/[master]/DockerIntro-NoDocker.png?raw=true)
 
 - [ ] Virtualization vs. Containers
 ￼   - Virtualization is a simulated computer, often with it's own BIOS/EFI and simulated (often configurable) hardware.
