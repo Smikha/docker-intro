@@ -9,7 +9,7 @@ Docker introductory presentation
         - Creating development, testing, and production environments
         - OS upgrades for each application installed
         
- ![alt text](https://github.com/[smikha]/[docker-intro]/images/[master]/DockerIntro-NoDocker.png?raw=true)
+ ![alt text](https://github.com/Smikha/docker-intro/tree/master/images/DockerIntro-NoDocker.png?raw=true)
 
 - [ ] Virtualization vs. Containers
 ￼   - Virtualization is a simulated computer, often with it's own BIOS/EFI and simulated (often configurable) hardware.
