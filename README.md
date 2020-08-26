@@ -9,25 +9,35 @@ Docker introductory presentation
         - Creating development, testing, and production environments
         - OS upgrades for each application installed
         
- ![alt text](../master/images/DockerIntro-NoDocker.png?raw=true)
+ ![No Docker Solution](../master/images/DockerIntro-NoDocker.png?raw=true)
 
-- [ ] Virtualization vs. Containers
-￼   - Virtualization is a simulated computer, often with it's own BIOS/EFI and simulated (often configurable) hardware.
-        - Applications layer and own kernel (does not use host kernel) 
-        - Any OS can be run on any other OS
-        - GUI based VMs
-    - Containers will run guest applications on the same OS kernel as the host.
-        - Easy to update
-        - Minimal maintaince
-        - Size of images is smaller
-        - Speed of start-up is much faster
-        - Restarting takes it to it's inital state
+## VMs and Contaianers
+Containers will run guest applications on the same OS kernel as the host.
+    * Easy to update
+    * Minimal maintaince
+    * Size of images is smaller
+    * Speed of start-up is much faster
+    * Restarting takes it to it's inital state
+
+Containers vs. Image
+    * Containers run the instances of the images that you create
+    * Images are the package or template, similar to a VM, that's used to create one or several containers
+
+ ![Docker Solution](../master/images/DockerIntro-Container.png?raw=true)
+
+
+Virtualization is a simulated computer, often with it's own BIOS/EFI and simulated (often configurable) hardware.
+    * Applications layer and own kernel (does not use host kernel) 
+    * Any OS can be run on any other OS
+    * GUI based VMs
+
+ ![VM Docker Solution](../master/images/DockerIntro-VM.png?raw=true)
+ 
+ 
 
 ## Virtualization AND Docker containers 
 ￼
-- [ ] Containers vs. Image
-    -  Containers run the instances of the images that you create
-    -  Images are the package or template, similar to a VM, that's used to create one or several containers
+
 
 - [ ] Community vs. Enterprise Edition
 
@@ -76,7 +86,8 @@ Docker introductory presentation
 
 
     - [ ] Volume
-￼
+￼ ![Volume](../master/images/DockerIntro-DockerDB.png?raw=true)
+
   
 ## Troubleshooting
 Return low-level information on Docker objects
