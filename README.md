@@ -30,6 +30,8 @@ Virtualization is a simulated computer, often with it's own BIOS/EFI and simulat
 - Any OS can be run on any other OS
 - GUI based VMs
 
+The below image is an example os a Type-1 Hypervisor (Hyper-V), where the hypervisor is installed directly on the hardware.
+
  ![VM Docker Solution](../master/images/DockerIntro-VM.png?raw=true)
  
  
