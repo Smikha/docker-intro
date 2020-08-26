@@ -35,52 +35,62 @@ Virtualization is a simulated computer, often with it's own BIOS/EFI and simulat
  
 
 ## Commands <sup>1</sup>
-￼
-- [ ] Commands
-    - Show all containers (default shows just running)
-    docker ps -a
 
-    - Run a command in a new container (attached mode)
-    docker run <name> 
+Show all containers (default shows just running)
 
-    - Run container in background and print container ID (detached mode)
-    docker run -d <name>
-        - [ ] You can attach back to the container later with
+        docker ps -a
+
+Run a command in a new container (attached mode)
+        
+        docker run <name> 
+
+Run container in background and print container ID (detached mode)
+
+        docker run -d <name>
+You can attach back to the container later with
+    
     docker attach <characters of container>
 
-
     docker run -it <name>
-        - [ ] I Keep STDIN open even if not attached
-        - [ ] T Allocate a pseudo-TTY
+ I Keep STDIN open even if not attached
+ T Allocate a pseudo-TTY
 
-    - Pull an image or a repository from a registry
+Pull an image or a repository from a registry
+
     docker pull <name> 
 
-    - Stop one or more running containers
+Stop one or more running containers
+
     docker stop <name>
 
-    - Remove one or more containers
+Remove one or more containers
+    
     docker rm <name> 
 
-    - Remove one or more images
+Remove one or more images
+   
     docker rmi <name>
 
-    - Manage images
+Manage images
+    
     docker images
 
-    - Run a command in a running container
+Run a command in a running container
+
     docker exec <container name> cat /etc/hosts
 
-    - Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.
+Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.
+
     docker system prune -af
     docker system prune --volume 
 
-    - [ ] Networking
+Networking
+    
     docker run -p 80:5000 <Name> 
-            - [ ] Mapping port 80 of localhost to 5000 of docker container
+Mapping port 80 of localhost to 5000 of docker container
 
 
-    - [ ] Volume
+Volume
 ￼ ![Volume](../master/images/DockerIntro-DockerDB.png?raw=true)
 
   
