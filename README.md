@@ -10,13 +10,13 @@ Each piece of the project may rely on different OS', libraries, and services. It
         
  ![No Docker Solution](../master/images/DockerIntro-NoDocker.png?raw=true)
 
-## VMs and Contaianers
+## VMs and Containers
 Containers will run guest applications on the same OS kernel as the host.
 - Easy to update
-- Minimal maintaince
+- Minimal maintenance
 - Size of images is smaller
 - Speed of start-up is much faster
-- Restarting takes it to it's inital state
+- Restarting takes it to it's initial state
 
 Containers vs. Image
 - Containers run the instances of the images that you create
@@ -106,7 +106,7 @@ Fetch the logs of a container
 
     Docker logs <name> 
   
-## Envirnoment Variables
+## Environment Variables
 Environment variables
 
     Docker run -e HELLO_NAME=Stevan <name>
