@@ -83,7 +83,7 @@ Run a command in a running container
 Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.
 
     docker system prune -af
-    docker system prune --volume 
+    docker system prune --volumes 
 
 Networking
 - Mapping port 80 of localhost to 5000 of docker container
