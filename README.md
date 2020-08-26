@@ -90,7 +90,6 @@ Networking
 
       docker run -p 80:5000 <Name> 
 
-
 Volume
 ￼ ![Volume](../master/images/DockerIntro-DockerDB.png?raw=true)
 
