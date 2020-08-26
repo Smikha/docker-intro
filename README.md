@@ -31,45 +31,45 @@ Docker introductory presentation
 
 - [ ] Commands
     - Show all containers (default shows just running)
-        - docker ps -a
+    docker ps -a
 
     - Run a command in a new container (attached mode)
-        - docker run <name> 
+    docker run <name> 
 
     - Run container in background and print container ID (detached mode)
-    - [ ] Docker run -d <name>
+    docker run -d <name>
         - [ ] You can attach back to the container later with
-            - [ ] Docker attach <characters of container>
+    docker attach <characters of container>
 
 
-    - [ ] Docker run -it <name>
+    docker run -it <name>
         - [ ] I Keep STDIN open even if not attached
         - [ ] T Allocate a pseudo-TTY
 
     - Pull an image or a repository from a registry
-    - [ ] Docker pull <name> 
+    docker pull <name> 
 
     - Stop one or more running containers
-    - [ ] Docker stop <name>
+    docker stop <name>
 
     - Remove one or more containers
-    - [ ] Docker rm <name> 
+    docker rm <name> 
 
     - Remove one or more images
-    - [ ] Docker rmi <name>
+    docker rmi <name>
 
     - Manage images
-    - [ ] Docker images
+    docker images
 
     - Run a command in a running container
-    - [ ] Docker exec <container name> cat /etc/hosts
+    docker exec <container name> cat /etc/hosts
 
     - Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.
-        - Docker system prune -af
-        - Docker system prune --volume 
+    docker system prune -af
+    docker system prune --volume 
 
     - [ ] Networking
-        - [ ] Docker run -p 80:5000 <Name> 
+    docker run -p 80:5000 <Name> 
             - [ ] Mapping port 80 of localhost to 5000 of docker container
 
 
@@ -77,24 +77,24 @@ Docker introductory presentation
 ￼
   
 ## Troubleshooting
-    - Return low-level information on Docker objects
-    - [ ] Docker inspect <name>
+Return low-level information on Docker objects
+    Docker inspect <name>
 
-    - Fetch the logs of a container
-    - [ ] Docker logs <name> 
+Fetch the logs of a container
+    Docker logs <name> 
   
 ## Envirnoment Variables
 - [ ] Environment variables
-    - [ ] Docker run -e HELLO_NAME=Stevan <name>
+    Docker run -e HELLO_NAME=Stevan <name>
   
 ## Security
 - [ ] Security
     - [ ] Anchore
 
 ## Commands
-docker build -t mydocker .
-docker run --rm mydocker https://httpbin.org/get
-docker-compose run app -I https://httpbin.org/get 
+    docker build -t mydocker .
+    docker run --rm mydocker https://httpbin.org/get
+    docker-compose run app -I https://httpbin.org/get 
 
 
 
