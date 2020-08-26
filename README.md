@@ -88,7 +88,7 @@ Remove all unused containers, networks, images (both dangling and unreferenced),
 Networking
 - Mapping port 80 of localhost to 5000 of docker container
 
-    docker run -p 80:5000 <Name> 
+      docker run -p 80:5000 <Name> 
 
 
 Volume
